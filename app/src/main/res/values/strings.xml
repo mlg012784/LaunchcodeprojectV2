@@ -100,7 +100,7 @@
     <string name="heading_recent">Recent</string>
     <string name="heading_my_posts">My Posts</string>
     <string name="heading_my_top_posts">My Top Posts</string>
-    <string name="view_list_button">View Lists</string>
+    <string name="view_list_button">View List</string>
     <string name="add_item_edit_text">Enter Item</string>
     <string name="add_item_button">Add Item To List</string>
     <string name="edit_list_button">Edit List</string>

@@ -1,6 +1,6 @@
 package com.example.mlg02.launchcodeprojectv2.viewholder;
 
-import android.graphics.Paint;
+
 import android.support.v7.widget.RecyclerView;
 
 import android.view.View;
@@ -32,7 +32,7 @@ public class ItemViewHolder extends RecyclerView.ViewHolder{
 
         }
 
-       //, View.OnClickListener checkClickListener
+
     public void bindToItem(Item item, CompoundButton.OnCheckedChangeListener checkedChangeListener){
 
         checkBox.setOnCheckedChangeListener(checkedChangeListener);
@@ -44,8 +44,7 @@ public class ItemViewHolder extends RecyclerView.ViewHolder{
 
 
 
-        //checkMark.setOnClickListener(checkClickListener);
-        //delView.setOnClickListener(delClickListener);
+
     }
 
 
