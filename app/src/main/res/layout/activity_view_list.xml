@@ -9,12 +9,22 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".ViewListActivity">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
     <android.support.v4.view.ViewPager
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="386dp"
+        android:layout_height="397dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp">
+
+    </android.support.v4.view.ViewPager>
+
     <LinearLayout
         android:id="@+id/add_task_wrapper"
         android:layout_width="match_parent"

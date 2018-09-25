@@ -115,7 +115,6 @@ public class EmailPasswordActivity extends BaseActivity implements
         }
 
         showProgressDialog();
-
         // [START sign_in_with_email]
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -138,7 +137,6 @@ public class EmailPasswordActivity extends BaseActivity implements
                         // [START_EXCLUDE]
                         if (!task.isSuccessful()) {
                             mStatusTextView.setText(R.string.auth_failed);
-
                         }
                         hideProgressDialog();
                         // [END_EXCLUDE]
@@ -149,11 +147,8 @@ public class EmailPasswordActivity extends BaseActivity implements
 
     private void onAuthSuccess(FirebaseUser user) {
         String username = usernameFromEmail(user.getEmail());
-
         writeNewUser(user.getUid(), username, user.getEmail());
-
         startActivity(new Intent(EmailPasswordActivity.this,ViewListActivity.class));
-
     }
 
     private String usernameFromEmail(String email) {

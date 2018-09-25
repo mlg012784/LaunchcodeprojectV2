@@ -57,7 +57,6 @@ public class ViewListActivity extends BaseActivity{
         mViewPager = findViewById(R.id.container);
         mViewPager.setAdapter(mPagerAdapter);
 
-
         findViewById(R.id.add_item_button).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){

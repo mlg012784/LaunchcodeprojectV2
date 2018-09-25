@@ -23,7 +23,8 @@
 
         <activity android:name=".BaseActivity"/>
         <activity android:name=".ViewListActivity"/>
-        <activity android:name=".NewItemActivity"/>
+        <activity android:name=".NewItemActivity"
+            android:noHistory="true"/>
         <activity android:name=".ItemDetailActivity"/>
         <activity android:name=".EmailPasswordActivity"/>
         <activity

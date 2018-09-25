@@ -156,6 +156,7 @@ public class ItemDetailActivity extends BaseActivity implements View.OnClickList
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
                 deleteItem();
+                finish();
             }
         });
         builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {

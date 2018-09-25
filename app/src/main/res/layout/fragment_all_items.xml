@@ -13,10 +13,11 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/item_list"
         android:layout_width="match_parent"
-        android:layout_height="405dp"
+        android:layout_height="408dp"
         android:layout_marginBottom="12dp"
+        android:hapticFeedbackEnabled="false"
         android:scrollbars="none"
-        tools:listitem = "@layout/list_item"/>
+        tools:listitem="@layout/list_item" />
 
 
 </FrameLayout>

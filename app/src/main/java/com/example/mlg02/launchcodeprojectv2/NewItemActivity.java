@@ -1,5 +1,6 @@
 package com.example.mlg02.launchcodeprojectv2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
@@ -67,11 +68,12 @@ public class NewItemActivity extends BaseActivity {
                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                    Item item = dataSnapshot.getValue(Item.class);
 
-
-                   mTitleField.setText(item.title, TextView.BufferType.EDITABLE);
-                   mBodyField.setText(item.body, TextView.BufferType.EDITABLE);
-                   mTitleField.setSelectAllOnFocus(true);
-                   mBodyField.setSelectAllOnFocus(true);
+                   if (item != null) {
+                       mTitleField.setText(item.title, TextView.BufferType.EDITABLE);
+                       mBodyField.setText(item.body, TextView.BufferType.EDITABLE);
+                       mTitleField.setSelectAllOnFocus(true);
+                       mBodyField.setSelectAllOnFocus(true);
+                   }
 
 
                }
@@ -106,6 +108,9 @@ public class NewItemActivity extends BaseActivity {
    }
 
 
+
+
+
     @Override public void onStop(){
         super.onStop();
 
@@ -114,8 +119,6 @@ public class NewItemActivity extends BaseActivity {
            mDatabase.removeEventListener(mItemListener);
         }
     }
-
-
 
     private void editItem(){
 
@@ -141,7 +144,6 @@ public class NewItemActivity extends BaseActivity {
         //finish activity back to prev
         setEditingEnabled(true);
         finish();
-
     }
 
     private void submitItem(){
